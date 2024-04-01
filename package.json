@@ -1,0 +1,16 @@
+{
+  "name": "-socket-message_server",
+  "version": "1.0.0",
+  "description": "This project implements a simple Node.js Express application with a socket server. The socket server publishes random messages to a topic every 3 seconds, and clients connected to the socket can receive these messages in real-time.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "socket.io": "^4.7.5"
+  }
+}
