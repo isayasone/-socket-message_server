@@ -1,0 +1,18 @@
+# Dependency directories
+node_modules/
+
+# Environment variables file
+.env
+
+# Build artifacts
+/build
+/dist
+
+# Logs
+/logs
+
+# IDE and editor specific files
+.vscode/
+.idea/
+*.swp
+*.swo
