@@ -26,9 +26,7 @@ This project implements a simple Node.js Express application with a socket serve
     node index.js
     ```
 
-5. **View the application:**
 
-    Open your browser and go to [http://localhost:3000](http://localhost:3000) to view the application.
 
 ## Technologies Used
 
