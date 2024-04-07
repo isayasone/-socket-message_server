@@ -1,3 +1,4 @@
+const   generateRandomData=require('./generateRandomData')
 const express = require('express');
 const http = require('http');
 const socketIo = require('socket.io');
@@ -15,10 +16,18 @@ const io = socketIo(server, {
 app.use(express.static('public'));
 
 // Publish random message to 'topic' every 3 seconds
-const interval = setInterval(() => {
+   setInterval(() => {
     const randomMessage = Math.random().toString(36).substring(7);
     io.emit('message', randomMessage);
 }, 3000);
+
+
+
+ setInterval(() => {
+    const  citiesWeather=  generateRandomData() ;
+    io.emit('weather',  citiesWeather);
+}, 1000);
+
 
 // Socket connection
 io.on('connection', (socket) => {
